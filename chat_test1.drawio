@@ -1,30 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net">
-  <diagram id="abcd1234" name="Page-1">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+  <diagram name="Page-1">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="2" value="Animal\n- name: String\n+ say()" style="rounded=0;whiteSpace=wrap;html=1;shape=rect;" vertex="1" parent="1">
-          <mxGeometry x="200" y="20" width="160" height="90" as="geometry"/>
+        <!-- Animal -->
+        <mxCell id="2" value="&lt;b&gt;Animal&lt;/b&gt;&lt;br&gt;-name: String&lt;br&gt;+say()" style="swimlane;html=1;whiteSpace=wrap;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="160" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="3" value="Cat\n+ say()\n- meow()" style="rounded=0;whiteSpace=wrap;html=1;shape=rect;" vertex="1" parent="1">
-          <mxGeometry x="20" y="160" width="160" height="90" as="geometry"/>
+        <!-- Cat -->
+        <mxCell id="3" value="Cat&lt;br&gt;+say()&lt;br&gt;-meow()" style="swimlane;html=1;whiteSpace=wrap;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="4" value="Canine\n# likeBones: bool" style="rounded=0;whiteSpace=wrap;html=1;shape=rect;" vertex="1" parent="1">
-          <mxGeometry x="250" y="160" width="160" height="90" as="geometry"/>
+        <!-- Canine -->
+        <mxCell id="4" value="&lt;i&gt;Canine&lt;/i&gt;&lt;br&gt;#likeBones: bool" style="swimlane;html=1;whiteSpace=wrap;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="220" width="140" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="5" value="Dog\n+ say()\n- bark()" style="rounded=0;whiteSpace=wrap;html=1;shape=rect;" vertex="1" parent="1">
-          <mxGeometry x="250" y="300" width="160" height="90" as="geometry"/>
+        <!-- Dog -->
+        <mxCell id="5" value="Dog&lt;br&gt;+say()&lt;br&gt;-bark()" style="swimlane;html=1;whiteSpace=wrap;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="370" width="120" height="70" as="geometry"/>
         </mxCell>
-        <!-- Inheritance edges -->
-        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="2" target="3">
+        <!-- Animal -> Cat -->
+        <mxCell id="6" style="endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="140" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- Animal -> Canine -->
+        <mxCell id="7" style="endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="2" target="4">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="2" target="4">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="4" target="5">
+        <!-- Canine -> Dog -->
+        <mxCell id="8" style="endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="4" target="5">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
       </root>
