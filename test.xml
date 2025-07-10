@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2025-07-10T12:04:13.000Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="q-bQ1Z_f8Lg_f8Lg_f8Lg" version="24.6.4" type="device">
+  <diagram id="class_diagram" name="Page-1">
+    <mxGraphModel dx="1092" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="Animal" value="&lt;u&gt;Animal&lt;/u&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;hr&gt;-name: String&lt;hr&gt;+say()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Cat" value="&lt;u&gt;Cat&lt;/u&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;hr&gt;+say()&lt;br&gt;-meow()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="300" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Canine" value="&lt;u&gt;Canine&lt;/u&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;hr&gt;#likeBones: bool" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="Dog" value="&lt;u&gt;Dog&lt;/u&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;hr&gt;+say()&lt;br&gt;-bark()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="AnimalToCat" value="" style="endArrow=block;endFill=0;endSize=12;html=1;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="Animal" target="Cat" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="170" as="sourcePoint" />
+            <mxPoint x="240" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="240" />
+              <mxPoint x="240" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="AnimalToCanine" value="" style="endArrow=block;endFill=0;endSize=12;html=1;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="Animal" target="Canine" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="170" as="sourcePoint" />
+            <mxPoint x="520" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="240" />
+              <mxPoint x="520" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="CanineToDog" value="" style="endArrow=block;endFill=0;endSize=12;html=1;fontColor=#000000;" parent="1" source="Canine" target="Dog" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="370" as="sourcePoint" />
+            <mxPoint x="520" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
