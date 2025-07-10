@@ -26,4 +26,41 @@
         </mxCell>
         
         <!-- Dog Class -->
-        <mxCell id="6" value="&lt;b&gt;Dog&lt;/b&gt;&lt;hr&gt;+say()&lt;br&gt;-bark()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily
+        <mxCell id="6" value="&lt;b&gt;Dog&lt;/b&gt;&lt;hr&gt;+say()&lt;br&gt;-bark()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="370" width="120" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Robot Class -->
+        <mxCell id="7" value="&lt;b&gt;Robot&lt;/b&gt;&lt;hr&gt;-printOut()&lt;br&gt;+say()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="120" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Inheritance: Animal -> Cat -->
+        <mxCell id="8" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="4" target="2">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Inheritance: Animal -> Canine -->
+        <mxCell id="9" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="5" target="2">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Inheritance: Canine -> Dog -->
+        <mxCell id="10" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Interface Implementation: Sayable -> Animal -->
+        <mxCell id="11" style="endArrow=block;endFill=0;dashed=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Interface Implementation: Sayable -> Robot -->
+        <mxCell id="12" style="endArrow=block;endFill=0;dashed=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1" source="7" target="3">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
