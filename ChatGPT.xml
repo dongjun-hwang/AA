@@ -1,77 +1,29 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1">
-    <![CDATA[
-      <mxGraphModel dx="665" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
-        <root>
-          <mxCell id="0"/>
-          <mxCell id="1" parent="0"/>
-          
-          <!-- Animal 클래스 -->
-          <mxCell id="2" value="<table><tr><td><i>Animal</i></td></tr><tr><td>- name: String</td></tr><tr><td>+ say()</td></tr></table>"
-                  style="html=1;rounded=0;whiteSpace=wrap;strokeColor=#000000;fillColor=#FFFFFF;" 
-                  vertex="1" parent="1">
-            <mxGeometry x="50" y="20" width="120" height="80" as="geometry"/>
-          </mxCell>
-          
-          <!-- Sayable 인터페이스 -->
-          <mxCell id="3" value="<table><tr><td><b>{interface}</b> Sayable</td></tr><tr><td>+ say()</td></tr></table>"
-                  style="html=1;rounded=0;whiteSpace=wrap;strokeColor=#000000;fillColor=#FFFFFF;" 
-                  vertex="1" parent="1">
-            <mxGeometry x="300" y="20" width="120" height="60" as="geometry"/>
-          </mxCell>
-          
-          <!-- Cat 클래스 -->
-          <mxCell id="4" value="<table><tr><td><b>Cat</b></td></tr><tr><td>+ say()</td></tr><tr><td>- meow()</td></tr></table>"
-                  style="html=1;rounded=0;whiteSpace=wrap;strokeColor=#000000;fillColor=#FFFFFF;" 
-                  vertex="1" parent="1">
-            <mxGeometry x="10" y="140" width="120" height="80" as="geometry"/>
-          </mxCell>
-          
-          <!-- Canine 클래스 -->
-          <mxCell id="5" value="<table><tr><td><b>Canine</b></td></tr><tr><td># likeBones: bool</td></tr></table>"
-                  style="html=1;rounded=0;whiteSpace=wrap;strokeColor=#000000;fillColor=#FFFFFF;" 
-                  vertex="1" parent="1">
-            <mxGeometry x="170" y="140" width="120" height="60" as="geometry"/>
-          </mxCell>
-          
-          <!-- Dog 클래스 -->
-          <mxCell id="6" value="<table><tr><td><b>Dog</b></td></tr><tr><td>+ say()</td></tr><tr><td>- bark()</td></tr></table>"
-                  style="html=1;rounded=0;whiteSpace=wrap;strokeColor=#000000;fillColor=#FFFFFF;" 
-                  vertex="1" parent="1">
-            <mxGeometry x="170" y="260" width="120" height="80" as="geometry"/>
-          </mxCell>
-          
-          <!-- Robot 클래스 -->
-          <mxCell id="7" value="<table><tr><td><b>Robot</b></td></tr><tr><td>- printOut()</td></tr><tr><td>+ say()</td></tr></table>"
-                  style="html=1;rounded=0;whiteSpace=wrap;strokeColor=#000000;fillColor=#FFFFFF;" 
-                  vertex="1" parent="1">
-            <mxGeometry x="330" y="140" width="120" height="80" as="geometry"/>
-          </mxCell>
-          
-          <!-- 일반화(상속) 관계 -->
-          <mxCell id="8"  edge="1" parent="1" source="2" target="4" style="endArrow=blockThin;endFill=0;">
-            <mxGeometry relative="1" as="geometry"/>
-          </mxCell>
-          <mxCell id="9"  edge="1" parent="1" source="2" target="5" style="endArrow=blockThin;endFill=0;">
-            <mxGeometry relative="1" as="geometry"/>
-          </mxCell>
-          <mxCell id="10" edge="1" parent="1" source="5" target="6" style="endArrow=blockThin;endFill=0;">
-            <mxGeometry relative="1" as="geometry"/>
-          </mxCell>
-          
-          <!-- Realization(실체화, 인터페이스 구현) 관계 -->
-          <mxCell id="11" edge="1" parent="1" source="2" target="3" style="dashed=1;endArrow=blockThin;endFill=0;">
-            <mxGeometry relative="1" as="geometry"/>
-          </mxCell>
-          <mxCell id="12" edge="1" parent="1" source="6" target="3" style="dashed=1;endArrow=blockThin;endFill=0;">
-            <mxGeometry relative="1" as="geometry"/>
-          </mxCell>
-          <mxCell id="13" edge="1" parent="1" source="7" target="3" style="dashed=1;endArrow=blockThin;endFill=0;">
-            <mxGeometry relative="1" as="geometry"/>
-          </mxCell>
-          
-        </root>
-      </mxGraphModel>
-    ]]>
-  </diagram>
-</mxfile>
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Animal Class -->
+        <mxCell id="2" value="&lt;b&gt;Animal&lt;/b&gt;&lt;hr&gt;-name: String&lt;hr&gt;+say()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="160" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Sayable Interface -->
+        <mxCell id="3" value="&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Sayable&lt;/b&gt;&lt;hr&gt;+say()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="60" width="140" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Cat Class -->
+        <mxCell id="4" value="&lt;b&gt;Cat&lt;/b&gt;&lt;hr&gt;+say()&lt;br&gt;-meow()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Canine Class -->
+        <mxCell id="5" value="&lt;i&gt;&lt;b&gt;Canine&lt;/b&gt;&lt;/i&gt;&lt;hr&gt;#likeBones: bool" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="220" width="140" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Dog Class -->
+        <mxCell id="6" value="&lt;b&gt;Dog&lt;/b&gt;&lt;hr&gt;+say()&lt;br&gt;-bark()" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily
