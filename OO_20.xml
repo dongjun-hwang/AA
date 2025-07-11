@@ -1,0 +1,161 @@
+<mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- Start Node -->
+    <mxCell id="2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="380" y="40" width="20" height="20" as="geometry" />
+    </mxCell>
+    
+    <!-- Login Activity -->
+    <mxCell id="3" value="로그인 시도&#xa;(login)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="320" y="100" width="140" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- Decision Diamond - Password Check -->
+    <mxCell id="4" value="비밀번호&#xa;올바른가?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="340" y="200" width="100" height="80" as="geometry" />
+    </mxCell>
+    
+    <!-- Incorrect Password Activity -->
+    <mxCell id="5" value="오류 메시지&#xa;표시" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="120" y="210" width="120" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- Validation Activity -->
+    <mxCell id="6" value="사용자 정보&#xa;검증" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="320" y="320" width="140" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- Welcome Message -->
+    <mxCell id="7" value="환영 메시지&#xa;표시" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="320" y="420" width="140" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- Register Grades Activity -->
+    <mxCell id="8" value="성적 등록&#xa;(register)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="320" y="520" width="140" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- Enter Grades Activity -->
+    <mxCell id="9" value="성적 정보&#xa;입력" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="320" y="620" width="140" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- Backup Data Activity -->
+    <mxCell id="10" value="데이터 백업&#xa;(backup)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="320" y="720" width="140" height="60" as="geometry" />
+    </mxCell>
+    
+    <!-- End Node -->
+    <mxCell id="11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="380" y="820" width="20" height="20" as="geometry" />
+    </mxCell>
+    
+    <!-- End Node Outer Circle -->
+    <mxCell id="12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="375" y="815" width="30" height="30" as="geometry" />
+    </mxCell>
+    
+    <!-- Arrows/Transitions -->
+    <!-- Start to Login -->
+    <mxCell id="13" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="2" target="3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="80" as="sourcePoint" />
+        <mxPoint x="390" y="100" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Login to Decision -->
+    <mxCell id="14" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="3" target="4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="160" as="sourcePoint" />
+        <mxPoint x="390" y="200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Decision to Error (No) -->
+    <mxCell id="15" value="아니오" style="endArrow=classic;html=1;" edge="1" parent="1" source="4" target="5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="340" y="240" as="sourcePoint" />
+        <mxPoint x="240" y="240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Error back to Login -->
+    <mxCell id="16" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="5" target="3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="180" y="210" as="sourcePoint" />
+        <mxPoint x="320" y="130" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="180" y="130" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Decision to Validation (Yes) -->
+    <mxCell id="17" value="예" style="endArrow=classic;html=1;" edge="1" parent="1" source="4" target="6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="280" as="sourcePoint" />
+        <mxPoint x="390" y="320" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Validation to Welcome -->
+    <mxCell id="18" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="6" target="7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="380" as="sourcePoint" />
+        <mxPoint x="390" y="420" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Welcome to Register -->
+    <mxCell id="19" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="7" target="8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="480" as="sourcePoint" />
+        <mxPoint x="390" y="520" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Register to Enter -->
+    <mxCell id="20" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="8" target="9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="580" as="sourcePoint" />
+        <mxPoint x="390" y="620" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Enter to Backup -->
+    <mxCell id="21" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="9" target="10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="680" as="sourcePoint" />
+        <mxPoint x="390" y="720" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Backup to End -->
+    <mxCell id="22" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="10" target="11">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="780" as="sourcePoint" />
+        <mxPoint x="390" y="820" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Swimlanes -->
+    <!-- Student Lane -->
+    <mxCell id="23" value="Student" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="30" width="200" height="830" as="geometry" />
+    </mxCell>
+    
+    <!-- System Lane -->
+    <mxCell id="24" value="System" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="240" y="30" width="300" height="830" as="geometry" />
+    </mxCell>
+    
+    <!-- Database Lane -->
+    <mxCell id="25" value="Database" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="540" y="30" width="200" height="830" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
