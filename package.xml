@@ -47,36 +47,114 @@
             font-size: 11px;
         }
         
-        /* Package Styles */
-        .frontend { background-color: #e3f2fd; top: 50px; left: 50px; width: 260px; height: 150px; }
-        .api-gateway { background-color: #e8f5e8; top: 50px; left: 350px; width: 260px; height: 150px; }
-        .payment-service { background-color: #fff3e0; top: 250px; left: 50px; width: 200px; height: 120px; }
-        .mgmt-service { background-color: #fff3e0; top: 250px; left: 280px; width: 200px; height: 120px; }
-        .support-service { background-color: #fff3e0; top: 250px; left: 510px; width: 200px; height: 120px; }
-        .external-interface { background-color: #f3e5f5; top: 400px; left: 280px; width: 200px; height: 100px; }
-        .external-connectors { background-color: #ffebee; top: 530px; left: 50px; width: 560px; height: 80px; }
-        .data-layer { background-color: #fce4ec; top: 640px; left: 50px; width: 660px; height: 120px; }
-        .sys-mgmt { background-color: #f1f8e9; top: 50px; left: 650px; width: 200px; height: 200px; }
-        
-        /* Association Lines */
-        .association {
-            position: absolute;
-            border: 1px dashed #666;
-        }
-        
-        .arrow::after {
-            content: '▶';
-            position: absolute;
-            right: -8px;
-            top: -8px;
-            color: #666;
+        .inline-component {
+            border: 1px solid #333;
+            padding: 4px 8px;
+            margin: 2px;
+            background: white;
+            text-align: center;
+            border-radius: 3px;
             font-size: 10px;
+            display: inline-block;
+            width: 80px;
         }
         
-        .label {
+        /* Package Styles */
+        .frontend { 
+            background-color: #e3f2fd; 
+            top: 50px; 
+            left: 50px; 
+            width: 280px; 
+            height: 160px; 
+        }
+        
+        .api-gateway { 
+            background-color: #e8f5e8; 
+            top: 50px; 
+            left: 380px; 
+            width: 280px; 
+            height: 160px; 
+        }
+        
+        .sys-mgmt { 
+            background-color: #f1f8e9; 
+            top: 50px; 
+            left: 720px; 
+            width: 220px; 
+            height: 200px; 
+        }
+        
+        .payment-service { 
+            background-color: #fff3e0; 
+            top: 270px; 
+            left: 50px; 
+            width: 200px; 
+            height: 140px; 
+        }
+        
+        .mgmt-service { 
+            background-color: #fff3e0; 
+            top: 270px; 
+            left: 290px; 
+            width: 200px; 
+            height: 140px; 
+        }
+        
+        .support-service { 
+            background-color: #fff3e0; 
+            top: 270px; 
+            left: 530px; 
+            width: 200px; 
+            height: 140px; 
+        }
+        
+        .external-interface { 
+            background-color: #f3e5f5; 
+            top: 450px; 
+            left: 290px; 
+            width: 200px; 
+            height: 100px; 
+        }
+        
+        .external-connectors { 
+            background-color: #ffebee; 
+            top: 580px; 
+            left: 50px; 
+            width: 680px; 
+            height: 90px; 
+        }
+        
+        .data-layer { 
+            background-color: #fce4ec; 
+            top: 700px; 
+            left: 50px; 
+            width: 880px; 
+            height: 100px; 
+        }
+        
+        /* Association Lines - Simple approach */
+        .arrow-h {
+            position: absolute;
+            height: 2px;
+            background-color: #666;
+            border-right: 8px solid #666;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+        
+        .arrow-v {
+            position: absolute;
+            width: 2px;
+            background-color: #666;
+            border-bottom: 8px solid #666;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+        }
+        
+        .arrow-label {
             position: absolute;
             background: white;
-            padding: 2px 4px;
+            padding: 2px 6px;
             font-size: 10px;
             color: #666;
             border: 1px solid #ddd;
@@ -96,6 +174,7 @@
     <div class="title">PG 플랫폼 Package Diagram</div>
     
     <div class="diagram-container">
+        
         <!-- Frontend Package -->
         <div class="package frontend">
             <div class="package-title">front_end</div>
@@ -112,6 +191,16 @@
             <div class="component">auth</div>
             <div class="component">security</div>
             <div class="component">loadbalancer</div>
+        </div>
+        
+        <!-- System Management Package -->
+        <div class="package sys-mgmt">
+            <div class="package-title">sys_mgmt</div>
+            <div class="component">devops</div>
+            <div class="component">monitoring</div>
+            <div class="component">security</div>
+            <div class="component">backup</div>
+            <div class="component">deployment</div>
         </div>
         
         <!-- Payment Service Package -->
@@ -152,75 +241,60 @@
         <!-- External Connectors Package -->
         <div class="package external-connectors">
             <div class="package-title">external_connector</div>
-            <div class="component" style="display: inline-block; width: 80px; margin: 3px;">VAN</div>
-            <div class="component" style="display: inline-block; width: 80px; margin: 3px;">Bank</div>
-            <div class="component" style="display: inline-block; width: 80px; margin: 3px;">SimplePay</div>
-            <div class="component" style="display: inline-block; width: 80px; margin: 3px;">CardCorp</div>
-            <div class="component" style="display: inline-block; width: 80px; margin: 3px;">ERP</div>
+            <div class="inline-component">VAN</div>
+            <div class="inline-component">Bank</div>
+            <div class="inline-component">SimplePay</div>
+            <div class="inline-component">CardCorp</div>
+            <div class="inline-component">ERP</div>
+            <div class="inline-component">SMS/Push</div>
         </div>
         
         <!-- Data Layer Package -->
         <div class="package data-layer">
             <div class="package-title">data_layer</div>
-            <div class="component" style="display: inline-block; width: 100px; margin: 3px;">PaymentDB</div>
-            <div class="component" style="display: inline-block; width: 100px; margin: 3px;">PGPayDB</div>
-            <div class="component" style="display: inline-block; width: 100px; margin: 3px;">MgmtDB</div>
-            <div class="component" style="display: inline-block; width: 100px; margin: 3px;">AnalyticsDB</div>
-            <div class="component" style="display: inline-block; width: 100px; margin: 3px;">CacheDB</div>
-            <div class="component" style="display: inline-block; width: 100px; margin: 3px;">FileStorage</div>
+            <div class="inline-component">PaymentDB</div>
+            <div class="inline-component">PGPayDB</div>
+            <div class="inline-component">MgmtDB</div>
+            <div class="inline-component">AnalyticsDB</div>
+            <div class="inline-component">CacheDB</div>
+            <div class="inline-component">FileStorage</div>
+            <div class="inline-component">BatchLayer</div>
+            <div class="inline-component">StreamLayer</div>
         </div>
         
-        <!-- System Management Package -->
-        <div class="package sys-mgmt">
-            <div class="package-title">sys_mgmt</div>
-            <div class="component">devops</div>
-            <div class="component">monitoring</div>
-            <div class="component">security</div>
-            <div class="component">backup</div>
-            <div class="component">deployment</div>
-        </div>
-        
-        <!-- Association Lines -->
+        <!-- Association Arrows -->
         
         <!-- Frontend to API Gateway -->
-        <div class="association arrow" style="top: 125px; left: 310px; width: 40px; height: 1px;"></div>
-        <div class="label" style="top: 115px; left: 315px;">requests</div>
+        <div class="arrow-h" style="top: 129px; left: 330px; width: 42px;"></div>
+        <div class="arrow-label" style="top: 115px; left: 335px;">requests</div>
         
-        <!-- API Gateway to Payment Service -->
-        <div class="association arrow" style="top: 210px; left: 430px; width: 1px; height: 40px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="label" style="top: 220px; left: 400px;">route</div>
-        
-        <!-- API Gateway to Management Service -->
-        <div class="association arrow" style="top: 210px; left: 460px; width: 1px; height: 40px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        
-        <!-- API Gateway to Support Service -->
-        <div class="association arrow" style="top: 210px; left: 550px; width: 1px; height: 40px; transform: rotate(90deg); transform-origin: 0 0;"></div>
+        <!-- API Gateway to Services -->
+        <div class="arrow-v" style="top: 210px; left: 149px; height: 52px;"></div>
+        <div class="arrow-v" style="top: 210px; left: 389px; height: 52px;"></div>
+        <div class="arrow-v" style="top: 210px; left: 629px; height: 52px;"></div>
+        <div class="arrow-label" style="top: 230px; left: 120px;">route</div>
         
         <!-- Services to External Interface -->
-        <div class="association arrow" style="top: 370px; left: 250px; width: 30px; height: 1px;"></div>
-        <div class="association arrow" style="top: 370px; left: 380px; width: 1px; height: 30px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="association arrow" style="top: 370px; left: 510px; width: 30px; height: 1px; transform: rotate(180deg);"></div>
+        <div class="arrow-v" style="top: 410px; left: 389px; height: 32px;"></div>
+        <div class="arrow-label" style="top: 420px; left: 350px;">external</div>
         
         <!-- External Interface to External Connectors -->
-        <div class="association arrow" style="top: 500px; left: 380px; width: 1px; height: 30px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="label" style="top: 510px; left: 350px;">connect</div>
+        <div class="arrow-v" style="top: 550px; left: 389px; height: 22px;"></div>
+        <div class="arrow-label" style="top: 560px; left: 350px;">connect</div>
         
         <!-- External Connectors to Data Layer -->
-        <div class="association arrow" style="top: 610px; left: 330px; width: 1px; height: 30px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="label" style="top: 620px; left: 300px;">store</div>
-        
-        <!-- System Management to API Gateway -->
-        <div class="association arrow" style="top: 125px; left: 610px; width: 40px; height: 1px; transform: rotate(180deg);"></div>
-        <div class="label" style="top: 115px; left: 620px;">manage</div>
-        
-        <!-- System Management to Services (vertical line) -->
-        <div class="association arrow" style="top: 250px; left: 750px; width: 1px; height: 120px; transform: rotate(90deg); transform-origin: 0 0;"></div>
+        <div class="arrow-v" style="top: 670px; left: 389px; height: 22px;"></div>
+        <div class="arrow-label" style="top: 680px; left: 350px;">store</div>
         
         <!-- Services to Data Layer -->
-        <div class="association arrow" style="top: 520px; left: 150px; width: 1px; height: 120px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="association arrow" style="top: 520px; left: 380px; width: 1px; height: 120px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="association arrow" style="top: 520px; left: 610px; width: 1px; height: 120px; transform: rotate(90deg); transform-origin: 0 0;"></div>
-        <div class="label" style="top: 580px; left: 120px;">persist</div>
+        <div class="arrow-v" style="top: 410px; left: 149px; height: 282px;"></div>
+        <div class="arrow-v" style="top: 410px; left: 629px; height: 282px;"></div>
+        <div class="arrow-label" style="top: 550px; left: 120px;">persist</div>
+        
+        <!-- System Management to API Gateway -->
+        <div class="arrow-h" style="top: 129px; left: 668px; width: 44px; transform: scaleX(-1);"></div>
+        <div class="arrow-label" style="top: 115px; left: 680px;">manage</div>
+        
     </div>
 </body>
-</html>
+</html
