@@ -1,0 +1,145 @@
+<mxGraphModel dx="2074" dy="1116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- Title -->
+    <mxCell id="title" value="PG 플랫폼 - Package Overview" style="text;html=1;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="20" y="10" width="200" height="30" as="geometry" />
+    </mxCell>
+    
+    <!-- Frontend Layer -->
+    <mxCell id="frontend" value="&lt;b&gt;com.pg.frontend&lt;/b&gt;&lt;br&gt;&lt;br&gt;web.user&lt;br&gt;web.admin&lt;br&gt;mobile.app&lt;br&gt;mobile.pos" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#01579b;fillColor=#e1f5fe;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="50" y="60" width="140" height="120" as="geometry" />
+    </mxCell>
+    
+    <!-- API Gateway -->
+    <mxCell id="gateway" value="&lt;b&gt;com.pg.gateway&lt;/b&gt;&lt;br&gt;&lt;br&gt;api.router&lt;br&gt;auth&lt;br&gt;security&lt;br&gt;loadbalancer" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#4a148c;fillColor=#f3e5f5;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="220" y="60" width="140" height="120" as="geometry" />
+    </mxCell>
+    
+    <!-- Payment Service -->
+    <mxCell id="payment" value="&lt;b&gt;com.pg.payment&lt;/b&gt;&lt;br&gt;&lt;br&gt;core&lt;br&gt;processor&lt;br&gt;validator&lt;br&gt;transaction&lt;br&gt;approval" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1b5e20;fillColor=#e8f5e8;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="390" y="60" width="140" height="140" as="geometry" />
+    </mxCell>
+    
+    <!-- PG Pay Service -->
+    <mxCell id="pgpay" value="&lt;b&gt;com.pg.pgpay&lt;/b&gt;&lt;br&gt;&lt;br&gt;account&lt;br&gt;wallet&lt;br&gt;transfer&lt;br&gt;balance&lt;br&gt;history" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1b5e20;fillColor=#e8f5e8;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="560" y="60" width="140" height="140" as="geometry" />
+    </mxCell>
+    
+    <!-- AI Service -->
+    <mxCell id="ai" value="&lt;b&gt;com.pg.ai&lt;/b&gt;&lt;br&gt;&lt;br&gt;chatbot&lt;br&gt;fraud.detection&lt;br&gt;analytics&lt;br&gt;ml.engine&lt;br&gt;recommendation" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1b5e20;fillColor=#e8f5e8;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="730" y="60" width="140" height="140" as="geometry" />
+    </mxCell>
+    
+    <!-- Management Service -->
+    <mxCell id="management" value="&lt;b&gt;com.pg.management&lt;/b&gt;&lt;br&gt;&lt;br&gt;merchant&lt;br&gt;contract&lt;br&gt;settlement&lt;br&gt;fee" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1b5e20;fillColor=#e8f5e8;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="390" y="230" width="140" height="120" as="geometry" />
+    </mxCell>
+    
+    <!-- Support Service -->
+    <mxCell id="support" value="&lt;b&gt;com.pg.support&lt;/b&gt;&lt;br&gt;&lt;br&gt;helpdesk&lt;br&gt;monitoring&lt;br&gt;notification&lt;br&gt;report" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1b5e20;fillColor=#e8f5e8;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="560" y="230" width="140" height="120" as="geometry" />
+    </mxCell>
+    
+    <!-- External Interface -->
+    <mxCell id="external" value="&lt;b&gt;com.pg.external&lt;/b&gt;&lt;br&gt;&lt;br&gt;api.client&lt;br&gt;event.broker&lt;br&gt;message&lt;br&gt;webhook" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#e65100;fillColor=#fff3e0;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="730" y="230" width="140" height="120" as="geometry" />
+    </mxCell>
+    
+    <!-- System Management -->
+    <mxCell id="system" value="&lt;b&gt;com.pg.system&lt;/b&gt;&lt;br&gt;&lt;br&gt;devops&lt;br&gt;monitoring&lt;br&gt;security&lt;br&gt;backup&lt;br&gt;deployment" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#33691e;fillColor=#f1f8e9;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="50" y="230" width="140" height="140" as="geometry" />
+    </mxCell>
+    
+    <!-- External Connectors -->
+    <mxCell id="connectors" value="&lt;b&gt;com.pg.connector&lt;/b&gt;&lt;br&gt;&lt;br&gt;VAN | Bank | SimplePayment&lt;br&gt;CardCompany | ERP | SMS/Push" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#880e4f;fillColor=#ffebee;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="390" y="380" width="480" height="80" as="geometry" />
+    </mxCell>
+    
+    <!-- Data Layer -->
+    <mxCell id="data" value="&lt;b&gt;com.pg.data&lt;/b&gt;&lt;br&gt;&lt;br&gt;PaymentDB | PGPayDB | AnalyticsDB | ManagementDB&lt;br&gt;CacheDB | FileStorage | BatchLayer | StreamLayer" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#880e4f;fillColor=#fce4ec;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="50" y="490" width="820" height="80" as="geometry" />
+    </mxCell>
+    
+    <!-- Dependencies -->
+    <mxCell id="dep1" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="frontend" target="gateway">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="120" as="sourcePoint" />
+        <mxPoint x="220" y="120" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep2" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="gateway" target="payment">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="360" y="120" as="sourcePoint" />
+        <mxPoint x="390" y="120" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep3" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="gateway" target="pgpay">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="360" y="140" as="sourcePoint" />
+        <mxPoint x="560" y="140" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep4" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="gateway" target="ai">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="360" y="160" as="sourcePoint" />
+        <mxPoint x="730" y="160" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep5" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="payment" target="management">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="460" y="200" as="sourcePoint" />
+        <mxPoint x="460" y="230" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep6" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="pgpay" target="support">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="630" y="200" as="sourcePoint" />
+        <mxPoint x="630" y="230" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep7" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="ai" target="external">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="800" y="200" as="sourcePoint" />
+        <mxPoint x="800" y="230" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep8" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="external" target="connectors">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="800" y="350" as="sourcePoint" />
+        <mxPoint x="630" y="380" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep9" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="connectors" target="data">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="630" y="460" as="sourcePoint" />
+        <mxPoint x="460" y="490" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep10" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="system" target="gateway">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="290" as="sourcePoint" />
+        <mxPoint x="220" y="180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+    <mxCell id="dep11" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=1;dashed=1;" edge="1" parent="1" source="system" target="external">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="330" as="sourcePoint" />
+        <mxPoint x="730" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>
